@@ -1,0 +1,14 @@
+﻿@model DapperDemo.Models.IndexModel
+@{
+    ViewData["Title"] = "Data Migration and Mapping";
+}
+
+<h2>Mapping with Dapper</h2>
+<hr />
+
+@foreach (var item in Model.Animals)
+{
+    <p>@item.Name - @item.Age</p>
+}
+
+
